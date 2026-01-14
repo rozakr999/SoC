@@ -1,0 +1,2 @@
+#define AXI4_LITE_BASE         0x43C00000
+#define I2C_BASE_OFFSET        0x00000000

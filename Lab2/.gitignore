@@ -1,0 +1,13 @@
+/Lab2.runs/
+/Lab2.gen/
+/Lab2.ip_user_files/
+/Lab2.tmp/
+/Lab2.sim/
+/Lab2.cache/
+/Lab2.hw/
+/.Xil/
+/NA/
+
+*.log
+*.jou
+*.str

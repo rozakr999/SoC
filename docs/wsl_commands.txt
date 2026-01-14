@@ -1,0 +1,15 @@
+/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -Command "Start-Process 'C:\Xilinx\Vivado\2024.2\bin\hw_server.bat' -WindowStyle Hidden"
+/mnt/c/Windows/System32/cmd.exe /c start "" "C:\Xilinx\Vivado\2024.2\bin\hw_server.bat"
+/mnt/c/Windows/System32/cmd.exe /k "C:\Xilinx\Vivado\2024.2\bin\hw_server.bat"
+/mnt/c/Windows/System32/cmd.exe /c tasklist
+/mnt/c/Windows/System32/cmd.exe /c taskkill /PID 24380 /F
+/mnt/c/Windows/System32/cmd.exe /c tasklist | grep hw_server
+
+/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoProfile -Command 'Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show("You have been hacked!!! Initiating shutdown in 5...")'
+
+/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe "Get-ItemProperty HKLM:\\HARDWARE\\DEVICEMAP\\SERIALCOMM"
+/mnt/c/Program\ Files/usbipd-win/usbipd.exe list
+/mnt/c/Program\ Files/usbipd-win/usbipd.exe bind --busid 1-9
+/mnt/c/Program\ Files/usbipd-win/usbipd.exe attach --wsl --busid 1-9
+screen /dev/ttyUSB1 115200
+/mnt/c/Program\ Files/usbipd-win/usbipd.exe detach --busid 1-9
